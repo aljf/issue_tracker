@@ -1,0 +1,150 @@
+
+:root {
+  --link-color: #172b4d;
+  --purple-primary: #402563;
+}
+
+body {
+  font-family: sans-serif;
+  color: #172b4d;
+  background-color: var(--purple-primary);
+  display: flex;
+  align-items: start;
+  height: 100vh;
+}
+
+#app {
+  width: 100%;
+}
+
+div {
+  border-radius: 3px;
+}
+
+#KanbanBoard {
+  display: flex;
+  align-items: start;
+  margin-top: 2%;
+}
+
+.list-name {
+  font-weight: 600;
+}
+
+a {
+  cursor: pointer;
+}
+
+.card {
+  background: white;
+  border-bottom: 1px solid #aaa;
+}
+
+.list-column {
+  min-width: 280px; 
+  margin: 50px 0.3rem;
+  position: relative;
+  background: #dfe1e6;
+}
+
+.editable {
+  user-select: none;
+  outline: none;
+  margin: 7px;
+  padding: 10px;
+  cursor: pointer !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-card {
+  width: calc(100% - 35px);
+  display: inline-block;
+  padding: 10px;
+  margin-top: 0px;
+  color: gray;
+  text-decoration: none;
+/*   border-bottom: 1px solid #dfe1e6; */
+}
+
+.add-card:hover {
+  background-color: rgba(9,30,66,.13);
+}
+
+.ghost {
+  opacity: .1;
+  color: #000;
+  background-color: #000;
+}
+
+.editing {
+  background: white;
+  color: #172b4d !important;
+  box-shadow:inset 0px 0px 0px 2px #0279bf;
+}
+
+.editing:hover {
+  background: white !important;
+}
+
+.navbar {
+  background-color: rgb(125, 148, 150);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 57px;
+  height: 6%;
+  padding: 0px 25px;
+}
+
+.select-board {
+  color: var(--link-color);
+}
+
+.select-board-modal {
+  display: block;
+  position: absolute;
+  top: 5vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.add-list {
+  min-width: 280px;
+  margin: 50px 0.3rem;
+  position: relative;
+  background: rgba(0,0,0,.12);
+  color: hsla(0,0%,100%,.8);
+}
+
+.icon-margin {
+  margin-right: 4px;
+}
+
+.highlight-region {
+  background-color: rgb(169, 171, 172);
+}
+
+.profile-btn{
+  margin-left: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.list-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove-list-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+}
+
+.flex {
+  display: flex;
+}
